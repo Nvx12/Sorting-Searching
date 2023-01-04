@@ -1,0 +1,15 @@
+ALGORITHM InsertionSort
+VAR
+    k , i , j : INTEGER;
+    arr : ARRAY_OF INTEGER[];
+BEGIN
+    FOR i FROM 1 TO arr.length STEP 1 DO
+        k =arr[i]
+        j=i-1;
+        WHILE (j>=0 AND arr[j]> k) DO
+            arr[j+1]=arr[j];
+            j=j-1;
+        END_WHILE
+        arr[j+1]=k;
+    END_FOR    
+END
